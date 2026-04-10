@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
@@ -10,6 +11,16 @@
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
+        }
+
+        .about {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10%;
+            gap: 60px;
+            /* 👈 add this */
         }
 
         body {
@@ -97,34 +108,36 @@
         }
     </style>
 </head>
+
 <body>
 
-<section class="about">
+    <section class="about">
 
-    <div class="about-left">
-        <img src="https://i.ibb.co.com/spMJT8kK/mehedi-dp.png" alt="About Image">
-    </div>
-
-    <div class="about-right">
-        <h2>About <span>Me</span></h2>
-
-        <p>
-            I am a passionate Web Developer with experience in building
-            full-stack web applications. I enjoy solving problems,
-            learning new technologies, and creating clean and efficient code.
-        </p>
-
-        <div class="info">
-            <p><strong>Name:</strong> Your Name</p>
-            <p><strong>Email:</strong> your@email.com</p>
-            <p><strong>Phone:</strong> +880XXXXXXXXXX</p>
-            <p><strong>Address:</strong> Bangladesh</p>
+        <div class="about-left">
+            <img src="https://i.ibb.co.com/spMJT8kK/mehedi-dp.png" alt="About Image">
         </div>
 
-        <button>Download CV</button>
-    </div>
+        <div class="about-right">
+            <h2>About <span>Me</span></h2>
 
-</section>
+            <p>
+                I am a passionate Web Developer with experience in building
+                full-stack web applications. I enjoy solving problems,
+                learning new technologies, and creating clean and efficient code.
+            </p>
+
+            <div class="info">
+                <p><strong>Name:</strong> Dewan Mehedi Hasan</p>
+                <p><strong>Email:</strong> dewan.mehedi.01@email.com</p>
+                <p><strong>Phone:</strong> +8801777349196</p>
+                <p><strong>Address:</strong> Dhaka, Bangladesh</p>
+            </div>
+
+            <button>Download CV</button>
+        </div>
+
+    </section>
 
 </body>
+
 </html>
