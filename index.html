@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Banner</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        .banner {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10%;
+        }
+
+        .banner-left {
+            max-width: 50%;
+        }
+
+        .banner-left h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .banner-left h1 span {
+            color: #38bdf8;
+        }
+
+        .banner-left p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #cbd5f5;
+        }
+
+        .banner-left button {
+            padding: 12px 25px;
+            border: none;
+            background: #38bdf8;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .banner-left button:hover {
+            background: #0ea5e9;
+        }
+
+        .banner-right img {
+            width: 350px;
+            border-radius: 50%;
+            border: 5px solid #38bdf8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-left, .banner-right {
+                max-width: 100%;
+            }
+
+            .banner-left h1 {
+                font-size: 35px;
+            }
+
+            .banner-right img {
+                margin-top: 20px;
+                width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="banner">
+    
+    <div class="banner-left">
+        <h1>Hello, I'm <span>Mehedi Hasan</span></h1>
+        <p>
+            I am a passionate Web Developer specializing in building modern,
+            responsive, and user-friendly web applications using React,
+            Node.js, and MongoDB.
+        </p>
+        <button>Hire Me</button>
+    </div>
+
+    <div class="banner-right">
+        <img src="https://i.ibb.co.com/s9d2Bn30/Chat-GPT-Image-Mar-16-2026-08-40-49-AM.png" alt="Profile Image">
+    </div>
+
+</section>
+
+</body>
+</html>
