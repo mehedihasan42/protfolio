@@ -73,6 +73,30 @@ iframe {
     height: 100vh;
     border: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main section {
+    height: 100vh;
+    /* padding: 5px; */
+    color: white;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    color: #cbd5f5;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #38bdf8;
+    color: black;
+}
 </style>
 </head>
 
@@ -82,18 +106,22 @@ iframe {
 <div class="sidebar">
     <h2><span style="color: aliceblue;">Mehedi</span> Hasan</h2>
 
-    <ul>
-        <li><button onclick="loadPage('banner.html')">Home</button></li>
-        <li><button onclick="loadPage('about.html')">About</button></li>
-        <li><button onclick="loadPage('skill.html')">Skills</button></li>
-        <li><button onclick="loadPage('projects.html')">Projects</button></li>
-        <li><button onclick="loadPage('contact.html')">Contact</button></li>
-    </ul>
+   <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
 </div>
 
 <!-- Main Content -->
-<div class="main">
-    <iframe id="contentFrame" src="banner.html"></iframe>
+    <div class="main">
+    <section id="home"><iframe src="banner.html"></iframe></section>
+    <section id="about"><iframe src="about.html"></iframe></section>
+    <section id="skills"><iframe src="skill.html"></iframe></section>
+    <section id="projects"><iframe src="projects.html"></iframe></section>
+    <section id="contact"><iframe src="contact.html"></iframe></section>
 </div>
 
 <script>
